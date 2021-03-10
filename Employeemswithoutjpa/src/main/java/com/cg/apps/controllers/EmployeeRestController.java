@@ -49,7 +49,7 @@ public class EmployeeRestController {
     @DeleteMapping("/delete")
     public String delete(@RequestBody Employee employee){
         service.removeById(employee.getId());
-        return "Employee deleted for id="+employee.getId();
+        return "Employee of id is deleted="+employee.getId();
     }
 	
 	
