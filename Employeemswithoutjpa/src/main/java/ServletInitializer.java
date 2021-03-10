@@ -1,5 +1,4 @@
-package com.cg.apps.employeemswithoutjpa;
-
+import com.cg.apps.*;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 

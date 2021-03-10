@@ -1,6 +1,6 @@
 package com.cg.apps.dto;
 
-public class CreateEmployeeRequest {
+public class CreateEmpoyeeRequest {
 	
 	private String name;
 	private String department;

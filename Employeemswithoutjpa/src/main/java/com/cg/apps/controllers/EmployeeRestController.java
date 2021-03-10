@@ -54,7 +54,7 @@ public class EmployeeRestController {
     
     @ResponseStatus(HttpStatus.CREATED)
     @PostMapping("/add")
-    public String addEmployee(@RequestBody CreateEmployeeRequest requestData) {
+    public String addEmployee(@RequestBody CreateEmpoyeeRequest requestData) {
     	
         Employee created = service.add(requestData.getName(), requestData.getDepartment());
         
