@@ -22,7 +22,7 @@ public class EmployeeRestController {
 	@Autowired
 	private IEmployeeService service;
 	
-	@GetMapping(value = "byId/{id}")
+	@GetMapping(value = "/byId/{id}")
 	public Employee fetchEmpoyee(@PathVariable("id") int employeeId) {
 		Employee employee = service.findById(employeeId);
 		return employee;
