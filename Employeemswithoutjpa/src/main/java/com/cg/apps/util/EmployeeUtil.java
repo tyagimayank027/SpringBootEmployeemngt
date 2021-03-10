@@ -17,19 +17,21 @@ import java.util.stream.Collectors;
 
 @Component
 public class EmployeeUtil {
-	
-	public EmployeeDetails toDetails(Employee employee) {
-		EmployeeDetails details = new EmployeeDetails(employee.getId(),employee.getName(),employee.getDepartment());
-		return details;
-	}
-	
-	public List<EmployeeDetails> toDetailsList(Collection<Employee> employees){
-		List<EmployeeDetails>desired=new ArrayList<>();
-        for (Employee student:employees){
-            EmployeeDetails details=toDetails(employees);
-            desired.add(details);
-        }
-        return desired;
-	}
+
+	    public EmployeeDetails toDetails(Employee emp){
+	        EmployeeDetails details=new EmployeeDetails(emp.getId(), emp.getName(),emp.getDepartment());
+	        return details;
+	    }
+
+	    public List<EmployeeDetails> toDetailsList(Collection<Employee> employees){
+	        List<EmployeeDetails>desired=new ArrayList<>();
+	        for (Employee employee:employees){
+	            EmployeeDetails details=toDetails(employee);
+	            desired.add(details);
+	        }
+	        return desired;
+
+	    }
+
 
 }
