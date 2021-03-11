@@ -1,4 +1,4 @@
-import com.cg.apps.*;
+package com.cg.apps;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 

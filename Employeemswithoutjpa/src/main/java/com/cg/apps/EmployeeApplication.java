@@ -1,4 +1,4 @@
-import com.cg.*;
+package com.cg.apps;
 import com.cg.apps.ui.EmployeeUI;
 
 import org.springframework.boot.SpringApplication;
